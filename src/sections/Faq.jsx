@@ -4,8 +4,7 @@ import { faq } from '../constants/index'
 import FaqItem from "../components/FaqItem";
 
 const Faq = () => {
- 
-const halfLength = Math.floor(faq.length/2)
+  const halfLength = Math.floor(faq.length / 2);
 
   return (
     <section>
@@ -16,7 +15,7 @@ const halfLength = Math.floor(faq.length/2)
               Curiosity didn't kill the cat, it gave it answers.
             </h3>
             <p className="body-1 max-lg:max-w-sm">
-              You've got the questions, we've got the answers
+              You've got the questions, we've got the answers.
             </p>
           </div>
           <div className="faq-line_after w-0.5 h-full absolute left-[calc(50%-1px)] top-0 -z-1 bg-s2" />
@@ -29,9 +28,16 @@ const halfLength = Math.floor(faq.length/2)
                   className="size-1/2"
                 />
               </div>
+              {/* First half of FAQ items */}
               <div className="relative flex-1 pt-24">
                 {faq.slice(0, halfLength).map((item, index) => (
-                    <FaqItem key={item.id} item={item} index={index}/>
+                  <FaqItem key={item.id} item={item} index={index} />
+                ))}
+              </div>
+              {/* Second half of FAQ items */}
+              <div className="relative flex-1 pt-24">
+                {faq.slice(halfLength).map((item, index) => (
+                  <FaqItem key={item.id} item={item} index={halfLength + index} />
                 ))}
               </div>
             </div>
