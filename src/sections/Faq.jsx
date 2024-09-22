@@ -1,6 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { faq } from '../constants/index'
+import { faq } from "../constants/index";
 import FaqItem from "../components/FaqItem";
 
 const Faq = () => {
@@ -37,10 +37,15 @@ const Faq = () => {
               {/* Second half of FAQ items */}
               <div className="relative flex-1 pt-24">
                 {faq.slice(halfLength).map((item, index) => (
-                  <FaqItem key={item.id} item={item} index={halfLength + index} />
+                  <FaqItem
+                    key={item.id}
+                    item={item}
+                    index={halfLength + index}
+                  />
                 ))}
               </div>
             </div>
+            <div className="faq-lin_after absolute left-[calc(50%-1px)] top-0 -z-1 h-full w-0.5 bg-s2 max-lg:hidden" />
           </div>
         </div>
       </Element>
