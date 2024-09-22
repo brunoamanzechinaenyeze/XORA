@@ -37,7 +37,7 @@ const FaqItem = ({ item, index }) => {
         </div>
       </div>
       <SlideDown>
-          { activeId === item.id && <div> {item.answer}
+          { activeId === item.id && <div className="body-3 px-7 py-3.5"> {item.answer}
             </div>}
       </SlideDown>
     </div>
