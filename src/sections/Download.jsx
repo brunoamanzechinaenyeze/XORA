@@ -55,7 +55,7 @@ const Download = () => {
                     <span className="download_preview-dot left-6 bg-p2"/>
                     <span className="download_preview-dot left-11 bg-s3"/>
                     <span className="download_preview-dot left-16 bg-p1/15"/>
-                    <img src="/images/screen.jpeg" />
+                    <img src="/images/screen.jpg" />
                 </div>
               </div>
             </div>
