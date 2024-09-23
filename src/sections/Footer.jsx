@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-        <div>
-            
+        <div className='container py-10'>
+
         </div>
     </footer>
   )
