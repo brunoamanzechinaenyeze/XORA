@@ -33,7 +33,7 @@ const FaqItem = ({ item, index }) => {
             active && "before:bg-p1 after:rotate-0 after:bg-p1"
           )}
         >
-          {/* <div className="g4 size-11/12 rounded-full shadow-300" /> */}
+          <div className="g4 size-11/12 rounded-full shadow-300" />
         </div>
       </div>
       <SlideDown>

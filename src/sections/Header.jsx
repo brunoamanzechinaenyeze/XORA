@@ -11,13 +11,13 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
   const NavLink = ({ title }) => (
     <LinkScroll
-    onClick={() => setIsOpen(false)}
+      onClick={() => setIsOpen(false)}
       to={title}
       offset={-100}
       spy
@@ -29,7 +29,7 @@ const Header = () => {
       {title}
     </LinkScroll>
   );
-  
+
   return (
     <header
       className={clsx(
