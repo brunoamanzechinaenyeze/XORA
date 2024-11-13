@@ -8,5 +8,5 @@ export default defineConfig({
     outDir: 'dist',
   },
   base: './',
-},
+}
 )
